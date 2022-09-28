@@ -1,16 +1,33 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+#include <string.h>
+#include <ctype.h>
+using namespace std;  
 int main()
-{int num, rem, rev=0;
-cout<<"Enter the Number: ";
-cin>>num;
-while(num!=0)
 {
-rem = num%10;
-rev = rem + (rev*10);
-num = num/10;
+   int len,i,s,x;
+   char a[20];
+   cout<<"enter the size of value:";
+   cin>>s;
+   cout<<"Enter the value:";
+   for(int i=0;i<=s;i++)
+   {
+	cin>>a[i];
+   }
+   for(int i=0;i<=s;i++)
+   {
+	x = a[i];
+   }
+if(isdigit(x))
+{  
+   len = strlen(a);
+   for(i=len-1;i>=0;i--)
+   {
+ 	cout<< a[i];
+   }
 }
-cout<<"\nReverse = "<<rev;
-cout<<endl;
-return 0;
+else
+{
+	cout<<"invalid input";
+}
+    return 0;
 }
